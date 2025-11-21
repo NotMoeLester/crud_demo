@@ -29,9 +29,12 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextAge = New System.Windows.Forms.TextBox()
         Me.TextEmail = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CreateButton = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.ReadButton = New System.Windows.Forms.Button()
+        Me.EditButton = New System.Windows.Forms.Button()
+        Me.UpdateButton = New System.Windows.Forms.Button()
+        Me.DeleteButton = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -95,14 +98,14 @@ Partial Class Form1
         Me.TextEmail.Size = New System.Drawing.Size(262, 20)
         Me.TextEmail.TabIndex = 7
         '
-        'Button2
+        'CreateButton
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 213)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(167, 60)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "CREATE (insert data)"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CreateButton.Location = New System.Drawing.Point(12, 213)
+        Me.CreateButton.Name = "CreateButton"
+        Me.CreateButton.Size = New System.Drawing.Size(147, 60)
+        Me.CreateButton.TabIndex = 8
+        Me.CreateButton.Text = "CREATE (insert data)"
+        Me.CreateButton.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -112,23 +115,53 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(775, 150)
         Me.DataGridView1.TabIndex = 9
         '
-        'Button3
+        'ReadButton
         '
-        Me.Button3.Location = New System.Drawing.Point(198, 213)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(167, 60)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "READ (Retrieve Data)"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ReadButton.Location = New System.Drawing.Point(165, 213)
+        Me.ReadButton.Name = "ReadButton"
+        Me.ReadButton.Size = New System.Drawing.Size(147, 60)
+        Me.ReadButton.TabIndex = 10
+        Me.ReadButton.Text = "READ (Retrieve Data)"
+        Me.ReadButton.UseVisualStyleBackColor = True
+        '
+        'EditButton
+        '
+        Me.EditButton.Location = New System.Drawing.Point(318, 213)
+        Me.EditButton.Name = "EditButton"
+        Me.EditButton.Size = New System.Drawing.Size(147, 60)
+        Me.EditButton.TabIndex = 11
+        Me.EditButton.Text = "EDIT (Edit Selected Data)"
+        Me.EditButton.UseVisualStyleBackColor = True
+        '
+        'UpdateButton
+        '
+        Me.UpdateButton.Location = New System.Drawing.Point(471, 213)
+        Me.UpdateButton.Name = "UpdateButton"
+        Me.UpdateButton.Size = New System.Drawing.Size(147, 60)
+        Me.UpdateButton.TabIndex = 12
+        Me.UpdateButton.Text = "UPDATE (Update Data)"
+        Me.UpdateButton.UseVisualStyleBackColor = True
+        '
+        'DeleteButton
+        '
+        Me.DeleteButton.Location = New System.Drawing.Point(624, 213)
+        Me.DeleteButton.Name = "DeleteButton"
+        Me.DeleteButton.Size = New System.Drawing.Size(147, 60)
+        Me.DeleteButton.TabIndex = 13
+        Me.DeleteButton.Text = "DELETE (Delete Data)"
+        Me.DeleteButton.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.DeleteButton)
+        Me.Controls.Add(Me.UpdateButton)
+        Me.Controls.Add(Me.EditButton)
+        Me.Controls.Add(Me.ReadButton)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.CreateButton)
         Me.Controls.Add(Me.TextEmail)
         Me.Controls.Add(Me.TextAge)
         Me.Controls.Add(Me.Label3)
@@ -151,7 +184,10 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents TextAge As TextBox
     Friend WithEvents TextEmail As TextBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents CreateButton As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button3 As Button
+    Friend WithEvents ReadButton As Button
+    Friend WithEvents EditButton As Button
+    Friend WithEvents UpdateButton As Button
+    Friend WithEvents DeleteButton As Button
 End Class
