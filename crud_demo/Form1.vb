@@ -30,7 +30,7 @@ Public Class Form1
                     cmd.Parameters.AddWithValue("@email", TextEmail.Text)
                     cmd.ExecuteNonQuery()
                     MessageBox.Show("Record Insert Succesfully")
-                    RefreshGrid()
+                    'RefreshGrid()
                 End Using
             End Using
         Catch ex As Exception
